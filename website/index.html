@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Tripelago</title>
+    <meta name="description" content="Small-group journeys to 12 hand-picked destinations. Pick a plan, choose a destination and book online in minutes.">
+    <meta name="theme-color" content="#f4f8f9">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tripelago">
+    <meta property="og:title" content="Tripelago">
+    <meta property="og:description" content="Small-group journeys to 12 hand-picked destinations. Pick a plan, choose a destination and book online in minutes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1697473259118-473211915531?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/brand/brand-favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <noscript><style>.hero-gallery { opacity: 1; overflow-x: auto; }</style></noscript>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Tripelago",
+  "description": "Small-group journeys, thoughtful stays and local guides who turn every destination into a story worth keeping.",
+  "email": "hello@tripelago.com",
+  "telephone": "+63 912 345 6789",
+  "priceRange": "₱6,400–₱220,400",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12F, 25 Garnet Road",
+    "addressLocality": "Pasig City",
+    "postalCode": "1605",
+    "addressCountry": "PH"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <a class="header-brand" href="index.html" aria-label="Tripelago, home">
+            <img src="assets/img/brand/logo-mark.png" alt="" width="96" height="96">
+            <span class="header-brand-name" aria-hidden="true">Tripelago</span>
+        </a>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html" class="header-active-link" aria-current="page">Home</a>
+            <a href="pages/destinations.html">Destinations</a>
+            <a href="pages/plans.html">Plans</a>
+            <a href="pages/about.html">About us</a>
+        </nav>
+        <div class="header-actions">
+            <a class="header-cart" href="pages/cart.html" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7h12l-1 12.2a2 2 0 0 1-2 1.8H9a2 2 0 0 1-2-1.8z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="header-cart-count" aria-hidden="true">0</span></a>
+            <a class="header-cta" href="pages/sign-in.html" data-auth-cta>Sign in</a>
+            <button class="header-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 8h16M4 16h16"></path></svg></button>
+        </div>
+    </header>
+    <noscript><p class="noscript">Booking, the cart and accounts need JavaScript. Please turn it on to book a trip.</p></noscript>
+
+    <main id="main" tabindex="-1">
+        <section class="hero-video" aria-labelledby="home-title">
+            <div class="hero-media" style="background-image: url('assets/video/hero-poster.jpg')">
+                <video class="hero-video-el" muted loop playsinline preload="none" poster="assets/video/hero-poster.jpg" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1" data-hero-video>
+                    <source src="assets/video/hero.webm" type="video/webm">
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button class="hero-video-toggle" type="button" data-video-toggle hidden><svg class="icon-pause" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><rect x="2" y="1" width="3" height="10" rx="1"></rect><rect x="7" y="1" width="3" height="10" rx="1"></rect></svg><svg class="icon-play" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 1.5v9l7.5-4.5z"></path></svg><span class="visually-hidden" data-video-toggle-label>Pause background video</span></button>
+            <div class="hero-inner">
+                <h1 id="home-title"><strong class="heading-strong-primary">Feel more of every place</strong></h1>
+                <p class="heading-description">Hand-picked trips across four continents, led by local guides.</p>
+            </div>
+
+            <form class="trip-finder" id="trip-finder" action="pages/destinations.html" method="get" aria-label="Find a trip">
+                <div class="finder-field finder-where">
+                    <span class="finder-label" id="tf-dest-label">Where</span>
+                    <button class="finder-btn" type="button" id="tf-dest-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="where-panel" aria-describedby="tf-dest-label"><span id="tf-dest-value">Anywhere</span></button>
+                    <input type="hidden" name="dest" id="tf-dest" value="">
+                    <div class="finder-panel where-panel" id="where-panel" role="dialog" aria-modal="false" aria-labelledby="where-title" hidden>
+                        <div class="panel-head">
+                            <h2 class="panel-title" id="where-title">Where to?</h2>
+                            <button type="button" class="where-opt where-any" data-dest="" data-label="Anywhere" aria-pressed="true">Anywhere</button>
+                        </div>
+                        <div class="where-groups">
+                            <div class="where-col">
+                                <div class="where-group"><h3 class="continent region-asia">Asia</h3><button type="button" class="where-opt" data-dest="palawan" data-label="Palawan, Philippines" aria-pressed="false"><img src="assets/img/destinations/palawan-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Palawan</strong><small>Philippines · from ₱6,900</small></span></button><button type="button" class="where-opt" data-dest="chiangmai" data-label="Chiang Mai, Thailand" aria-pressed="false"><img src="assets/img/destinations/chiangmai-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Chiang Mai</strong><small>Thailand · from ₱6,400</small></span></button><button type="button" class="where-opt" data-dest="bali" data-label="Bali, Indonesia" aria-pressed="false"><img src="assets/img/destinations/bali-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Bali</strong><small>Indonesia · from ₱6,400</small></span></button><button type="button" class="where-opt" data-dest="kyoto" data-label="Kyoto, Japan" aria-pressed="false"><img src="assets/img/destinations/kyoto-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Kyoto</strong><small>Japan · from ₱13,900</small></span></button></div>
+                                <div class="where-group"><h3 class="continent region-africa">Africa</h3><button type="button" class="where-opt" data-dest="marrakech" data-label="Marrakech, Morocco" aria-pressed="false"><img src="assets/img/destinations/marrakech-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Marrakech</strong><small>Morocco · from ₱12,400</small></span></button></div>
+                                <div class="where-group"><h3 class="continent region-oceania">Oceania</h3><button type="button" class="where-opt" data-dest="southisland" data-label="South Island, New Zealand" aria-pressed="false"><img src="assets/img/destinations/southisland-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>South Island</strong><small>New Zealand · from ₱20,900</small></span></button></div>
+                            </div>
+                            <div class="where-col">
+                                <div class="where-group"><h3 class="continent region-europe">Europe</h3><button type="button" class="where-opt" data-dest="santorini" data-label="Santorini, Greece" aria-pressed="false"><img src="assets/img/destinations/santorini-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Santorini</strong><small>Greece · from ₱21,900</small></span></button><button type="button" class="where-opt" data-dest="barcelona" data-label="Barcelona, Spain" aria-pressed="false"><img src="assets/img/destinations/barcelona-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Barcelona</strong><small>Spain · from ₱15,400</small></span></button><button type="button" class="where-opt" data-dest="tuscany" data-label="Tuscany, Italy" aria-pressed="false"><img src="assets/img/destinations/tuscany-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Tuscany</strong><small>Italy · from ₱20,900</small></span></button><button type="button" class="where-opt" data-dest="paris" data-label="Paris, France" aria-pressed="false"><img src="assets/img/destinations/paris-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Paris</strong><small>France · from ₱22,400</small></span></button><button type="button" class="where-opt" data-dest="lucerne" data-label="Lucerne, Switzerland" aria-pressed="false"><img src="assets/img/destinations/lucerne-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Lucerne</strong><small>Switzerland · from ₱29,400</small></span></button><button type="button" class="where-opt" data-dest="iceland" data-label="South Coast, Iceland" aria-pressed="false"><img src="assets/img/destinations/iceland-160.webp" alt="" width="160" height="100" loading="lazy"><span><strong>South Coast</strong><small>Iceland · from ₱33,400</small></span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="finder-field finder-when">
+                    <span class="finder-label" id="tf-when-label">When</span>
+                    <button class="finder-btn" type="button" id="tf-when" aria-haspopup="dialog" aria-expanded="false" aria-controls="when-panel" aria-describedby="tf-when-label"><span id="tf-when-value">Any date</span></button>
+                    <input type="hidden" name="date" id="tf-date" disabled>
+                    <div class="finder-panel when-panel" id="when-panel" role="dialog" aria-modal="false" aria-labelledby="when-title" hidden>
+                        <div class="panel-head">
+                            <h2 class="panel-title" id="when-title">Pick a departure date</h2>
+                        </div>
+                        <div class="when-dates">
+                            <div class="cal-nav">
+                                <button type="button" class="cal-arrow" data-cal-prev aria-label="Previous month"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" stroke-width="2.4"><path d="M15 5l-7 7 7 7"></path></svg></button>
+                                <button type="button" class="cal-arrow" data-cal-next aria-label="Next month"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" stroke-width="2.4"><path d="M9 5l7 7-7 7"></path></svg></button>
+                            </div>
+                            <div class="cal-months" data-cal-months></div>
+                            <p class="when-note">Trips leave on the 5th and 19th of every month. Pick a highlighted date.</p>
+                        </div>
+                        <div class="when-foot">
+                            <button type="button" class="link-btn" data-when-clear>Any date</button>
+                            <button type="button" class="btn small" data-when-done>Done</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="finder-field">
+                    <label for="tf-qty">Travelers</label>
+                    <select id="tf-qty" name="qty"><option value="1">1 traveler</option><option value="2" selected>2 travelers</option><option value="3">3 travelers</option><option value="4">4 travelers</option><option value="5">5 travelers</option><option value="6">6 travelers</option><option value="7">7 travelers</option><option value="8">8 travelers</option><option value="9">9 travelers</option><option value="10">10 travelers</option><option value="11">11 travelers</option><option value="12">12 travelers</option></select>
+                </div>
+                <button class="finder-go" type="submit">Find my trip</button>
+            </form>
+        </section>
+        <p class="finder-alt">Not sure yet? <a href="pages/plans.html">Compare plans</a> or <a href="pages/destinations.html">see all destinations</a>.</p>
+
+        <section class="home-section strip-section" aria-labelledby="strip-title">
+            <div class="section-head">
+                <div><h2 id="strip-title">Where to next?</h2><p>12 places, one small group at a time.</p></div>
+                <a class="section-link" href="pages/destinations.html">See all destinations</a>
+            </div>
+            <div class="hero-carousel">
+                <button class="carousel-toggle" type="button" data-carousel-toggle><svg class="icon-pause" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><rect x="2" y="1" width="3" height="10" rx="1"></rect><rect x="7" y="1" width="3" height="10" rx="1"></rect></svg><svg class="icon-play" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 1.5v9l7.5-4.5z"></path></svg><span class="carousel-toggle-label">Pause</span><span class="visually-hidden"> destination slideshow</span></button>
+                <div class="hero-gallery" id="country-carousel" data-country-carousel>
+                    <a class="hero-card" href="trips/palawan.html"><img src="assets/img/destinations/palawan-480.webp" srcset="assets/img/destinations/palawan-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Philippines</span><strong>Palawan</strong></span></a>
+                    <a class="hero-card" href="trips/chiangmai.html"><img src="assets/img/destinations/chiangmai-480.webp" srcset="assets/img/destinations/chiangmai-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Thailand</span><strong>Chiang Mai</strong></span></a>
+                    <a class="hero-card" href="trips/bali.html"><img src="assets/img/destinations/bali-480.webp" srcset="assets/img/destinations/bali-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Indonesia</span><strong>Bali</strong></span></a>
+                    <a class="hero-card" href="trips/kyoto.html"><img src="assets/img/destinations/kyoto-480.webp" srcset="assets/img/destinations/kyoto-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Japan</span><strong>Kyoto</strong></span></a>
+                    <a class="hero-card" href="trips/marrakech.html"><img src="assets/img/destinations/marrakech-480.webp" srcset="assets/img/destinations/marrakech-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Morocco</span><strong>Marrakech</strong></span></a>
+                    <a class="hero-card" href="trips/santorini.html"><img src="assets/img/destinations/santorini-480.webp" srcset="assets/img/destinations/santorini-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Greece</span><strong>Santorini</strong></span></a>
+                    <a class="hero-card" href="trips/barcelona.html"><img src="assets/img/destinations/barcelona-480.webp" srcset="assets/img/destinations/barcelona-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Spain</span><strong>Barcelona</strong></span></a>
+                    <a class="hero-card" href="trips/tuscany.html"><img src="assets/img/destinations/tuscany-480.webp" srcset="assets/img/destinations/tuscany-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Italy</span><strong>Tuscany</strong></span></a>
+                    <a class="hero-card" href="trips/paris.html"><img src="assets/img/destinations/paris-480.webp" srcset="assets/img/destinations/paris-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>France</span><strong>Paris</strong></span></a>
+                    <a class="hero-card" href="trips/lucerne.html"><img src="assets/img/destinations/lucerne-480.webp" srcset="assets/img/destinations/lucerne-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Switzerland</span><strong>Lucerne</strong></span></a>
+                    <a class="hero-card" href="trips/iceland.html"><img src="assets/img/destinations/iceland-480.webp" srcset="assets/img/destinations/iceland-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>Iceland</span><strong>South Coast</strong></span></a>
+                    <a class="hero-card" href="trips/southisland.html"><img src="assets/img/destinations/southisland-480.webp" srcset="assets/img/destinations/southisland-480.webp 480w" sizes="(max-width: 44rem) 45vw, 200px" alt="" width="1600" height="1000" loading="lazy" decoding="async"><span class="hero-card-caption"><span>New Zealand</span><strong>South Island</strong></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section" aria-labelledby="how-title">
+            <div class="section-head">
+                <div><h2 id="how-title">How booking works</h2><p>Three steps from daydream to departure.</p></div>
+            </div>
+            <ol class="how-grid">
+                <li class="card how-step"><span class="step-no" aria-hidden="true">1</span><h3>Pick a plan</h3><p>Wander, Discover or Explore More. Each sets your trip length, hotel level and how many guided experiences are included.</p></li>
+                <li class="card how-step"><span class="step-no" aria-hidden="true">2</span><h3>Choose a destination</h3><p>12 hand-picked places across Asia, Europe, Africa and Oceania. Each has its own price per plan, shown before you book.</p></li>
+                <li class="card how-step"><span class="step-no" aria-hidden="true">3</span><h3>Book and relax</h3><p>Pick a departure date, add it to your cart and check out. A trip specialist takes it from there, visa checklist included.</p></li>
+            </ol>
+        </section>
+
+        <section class="home-section" aria-labelledby="plans-title">
+            <div class="section-head">
+                <div><h2 id="plans-title">Plans at a glance</h2><p>Every destination is available on all three plans.</p></div>
+                <a class="section-link" href="pages/plans.html">Compare plans</a>
+            </div>
+            <div class="plans-strip">
+                <article class="card plan-mini">
+                    <p class="eyebrow">Easy getaway</p>
+                    <h3>Wander</h3>
+                    <p class="price"><span class="price-from">Starting from</span>₱6,400 <small>/ person · 3 days</small></p>
+                    <p class="muted">A simple, well-planned break when you need a change of scenery.</p>
+                    <p class="plan-deal"><a href="pages/plans.html#deals">8% off with code <strong>ESCAPE8</strong></a></p>
+                    <a class="btn ghost" href="pages/destinations.html?plan=wander">Book with Wander</a>
+                </article>
+                <article class="card plan-mini dark">
+                    <p class="eyebrow">The full experience</p>
+                    <h3>Discover</h3>
+                    <p class="price"><span class="price-from">Starting from</span>₱26,400 <small>/ person · 5 days</small></p>
+                    <p class="muted">The right balance of iconic places, local finds, and time to explore.</p>
+                    <p class="plan-deal"><a href="pages/plans.html#deals">₱2,000 off with code <strong>DUO2000</strong></a></p>
+                    <a class="btn accent" href="pages/destinations.html?plan=discover">Book with Discover</a>
+                </article>
+                <article class="card plan-mini">
+                    <p class="eyebrow">Made around you</p>
+                    <h3>Explore More</h3>
+                    <p class="price"><span class="price-from">Starting from</span>₱58,400 <small>/ person · 8 days</small></p>
+                    <p class="muted">A longer, tailored journey for travelers ready to see beyond the usual.</p>
+                    <p class="plan-deal"><a href="pages/plans.html#deals">7% off with code <strong>GOFAR7</strong></a></p>
+                    <a class="btn ghost" href="pages/destinations.html?plan=explore">Book with Explore More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer slim">
+        <div class="footer-bottom">
+            <span>© <span data-year>2026</span> Tripelago</span>
+            <span class="footer-links"><a href="pages/contact.html">Contact us</a><a href="pages/faq.html">Help</a><a href="pages/terms.html">Terms</a><a href="pages/terms.html#privacy">Privacy</a></span>
+        </div>
+    </footer>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/pages/prelim.js" defer></script>
+    <script src="assets/js/pages/home.js" defer></script>
+</body>
+</html>

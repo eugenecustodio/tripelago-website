@@ -1,0 +1,10 @@
+# Security and caching headers for Netlify and Cloudflare Pages (other hosts ignore this file).
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Ta7P4tJV3PQ0GLQDmUxt35T5URpuDWMHr2LAw3iz+Aw='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self' https://formspree.io; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+/assets/*
+  Cache-Control: public, max-age=604800

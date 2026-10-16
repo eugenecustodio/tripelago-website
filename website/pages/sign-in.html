@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sign in · Tripelago</title>
+    <base href="../">
+    <meta name="description" content="Sign in or create a Tripelago account to keep your bookings and saved trips in one place.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#f4f8f9">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tripelago">
+    <meta property="og:title" content="Sign in · Tripelago">
+    <meta property="og:description" content="Sign in or create a Tripelago account to keep your bookings and saved trips in one place.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1697473259118-473211915531?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/brand/brand-favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="pages/sign-in.html#main">Skip to main content</a>
+    <header>
+        <a class="header-brand" href="index.html" aria-label="Tripelago, home">
+            <img src="assets/img/brand/logo-mark.png" alt="" width="96" height="96">
+            <span class="header-brand-name" aria-hidden="true">Tripelago</span>
+        </a>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="pages/destinations.html">Destinations</a>
+            <a href="pages/plans.html">Plans</a>
+            <a href="pages/about.html">About us</a>
+        </nav>
+        <div class="header-actions">
+            <a class="header-cart" href="pages/cart.html" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7h12l-1 12.2a2 2 0 0 1-2 1.8H9a2 2 0 0 1-2-1.8z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="header-cart-count" aria-hidden="true">0</span></a>
+            <a class="header-cta" href="pages/sign-in.html" data-auth-cta>Sign in</a>
+            <button class="header-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 8h16M4 16h16"></path></svg></button>
+        </div>
+    </header>
+    <noscript><p class="noscript">Booking, the cart and accounts need JavaScript. Please turn it on to book a trip.</p></noscript>
+
+    <main id="main" tabindex="-1">
+        <section class="auth-section">
+            <div class="auth-content">
+                <h1 class="page-title">Sign in</h1>
+                <p class="heading-description">Create an account to keep your bookings in one place, check out faster, and pick up where you left off.</p>
+
+                <div class="auth-feature">
+                    <div class="auth-feature-icon" aria-hidden="true">&#10022;</div>
+                    <div class="auth-feature-text">
+                        <h2>All your bookings, one page</h2>
+                        <p>Every order placed with your email shows up in your account with its reference, dates and payment status.</p>
+                    </div>
+                </div>
+                <div class="auth-feature">
+                    <div class="auth-feature-icon" aria-hidden="true">&#10022;</div>
+                    <div class="auth-feature-text">
+                        <h2>Faster checkout</h2>
+                        <p>Your name and email are filled in for you, so booking your next trip takes less than a minute.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-card-wrapper">
+                <div class="auth-card">
+                    <h2 id="auth-title">Welcome back</h2>
+                    <div class="auth-tabs" role="tablist" aria-label="Sign in or create an account">
+                        <button type="button" role="tab" id="tab-signin" data-tab="signin" aria-controls="form-signin" aria-selected="true" class="active">Sign in</button>
+                        <button type="button" role="tab" id="tab-signup" data-tab="signup" aria-controls="form-signup" aria-selected="false" tabindex="-1">Create account</button>
+                    </div>
+
+                    <form class="form" id="form-signin" role="tabpanel" aria-labelledby="tab-signin" novalidate>
+                        <div class="field">
+                            <label for="si-email">Email</label>
+                            <input class="contact-input" id="si-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-required="true">
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="field">
+                            <label for="si-pass">Password</label>
+                            <div class="password-wrap">
+                                <input class="contact-input" id="si-pass" name="password" type="password" autocomplete="current-password" aria-required="true">
+                                <button class="password-toggle" type="button" data-toggle-password="si-pass" aria-label="Show password">Show</button>
+                            </div>
+                            <span class="field-error"></span>
+                        </div>
+                        <p class="notice bad form-message" role="alert" hidden></p>
+                        <button class="btn block" type="submit">Sign in</button>
+                        <button class="link-btn" type="button" id="forgot-toggle" aria-expanded="false" aria-controls="forgot-note">Forgot your password?</button>
+                        <div class="notice forgot-note" id="forgot-note" hidden>
+                            <p>Accounts are saved in this browser, so we can't email a reset link. You can remove the account from this device and create it again with a new password. Bookings made with that email will still be there.</p>
+                            <p><button class="link-btn" type="button" id="forgot-remove">Remove the account for the email above</button></p>
+                            <p class="forgot-result" id="forgot-result" role="status"></p>
+                        </div>
+                    </form>
+
+                    <form class="form" id="form-signup" role="tabpanel" aria-labelledby="tab-signup" novalidate hidden>
+                        <div class="field">
+                            <label for="su-name">Full name</label>
+                            <input class="contact-input" id="su-name" name="name" type="text" autocomplete="name" placeholder="Juan Dela Cruz" aria-required="true">
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="field">
+                            <label for="su-email">Email</label>
+                            <input class="contact-input" id="su-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-required="true">
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="field">
+                            <label for="su-pass">Password <span class="hint">(at least 8 characters)</span></label>
+                            <div class="password-wrap">
+                                <input class="contact-input" id="su-pass" name="password" type="password" autocomplete="new-password" minlength="8" aria-required="true">
+                                <button class="password-toggle" type="button" data-toggle-password="su-pass" aria-label="Show password">Show</button>
+                            </div>
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="field">
+                            <label for="su-confirm">Confirm password</label>
+                            <input class="contact-input" id="su-confirm" name="confirm" type="password" autocomplete="new-password" aria-required="true">
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="field">
+                            <label class="check"><input type="checkbox" id="su-terms" name="terms"> <span>I agree to the <a href="pages/terms.html">terms of service and privacy policy</a>.</span></label>
+                            <span class="field-error"></span>
+                        </div>
+                        <p class="notice bad form-message" role="alert" hidden></p>
+                        <button class="btn block" type="submit">Create account</button>
+                    </form>
+
+                    <p class="auth-disclaimer">Your account is stored in this browser. Use the same device to see your bookings later.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer slim">
+        <div class="footer-bottom">
+            <span>© <span data-year>2026</span> Tripelago</span>
+            <span class="footer-links"><a href="pages/contact.html">Contact us</a><a href="pages/faq.html">Help</a><a href="pages/terms.html">Terms</a><a href="pages/terms.html#privacy">Privacy</a></span>
+        </div>
+    </footer>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/pages/login.js" defer></script>
+</body>
+</html>

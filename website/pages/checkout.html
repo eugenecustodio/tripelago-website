@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Checkout · Tripelago</title>
+    <base href="../">
+    <meta name="description" content="Enter the lead traveler&#x27;s details, choose a payment method and place your order.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#f4f8f9">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tripelago">
+    <meta property="og:title" content="Checkout · Tripelago">
+    <meta property="og:description" content="Enter the lead traveler&#x27;s details, choose a payment method and place your order.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1697473259118-473211915531?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/brand/brand-favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="pages/checkout.html#main">Skip to main content</a>
+    <header>
+        <a class="header-brand" href="index.html" aria-label="Tripelago, home">
+            <img src="assets/img/brand/logo-mark.png" alt="" width="96" height="96">
+            <span class="header-brand-name" aria-hidden="true">Tripelago</span>
+        </a>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="pages/destinations.html">Destinations</a>
+            <a href="pages/plans.html">Plans</a>
+            <a href="pages/about.html">About us</a>
+        </nav>
+        <div class="header-actions">
+            <a class="header-cart" href="pages/cart.html" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7h12l-1 12.2a2 2 0 0 1-2 1.8H9a2 2 0 0 1-2-1.8z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="header-cart-count" aria-hidden="true">0</span></a>
+            <a class="header-cta" href="pages/sign-in.html" data-auth-cta>Sign in</a>
+            <button class="header-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 8h16M4 16h16"></path></svg></button>
+        </div>
+    </header>
+    <noscript><p class="noscript">Booking, the cart and accounts need JavaScript. Please turn it on to book a trip.</p></noscript>
+
+    <main id="main" tabindex="-1">
+        <section class="page">
+            <div class="card empty-card" id="checkout-empty" hidden>
+                <h1 class="empty-title">Nothing to check out yet</h1>
+                <p>Your cart is empty. Add a trip first.</p>
+                <a class="btn" href="pages/destinations.html">Browse destinations</a>
+            </div>
+
+            <div id="checkout-layout">
+                <div class="page-head">
+                    <h1>Checkout</h1>
+                    <p>Enter the lead traveler's details and place your order.</p>
+                </div>
+
+                <div class="checkout-layout">
+                    <form class="form" id="checkout-form" novalidate>
+                        <div class="card checkout-section">
+                            <h2>Lead traveler</h2>
+                            <p class="notice" id="signin-prompt">Have an account? <a id="signin-link" href="pages/sign-in.html?next=pages/checkout.html">Sign in</a> to fill this in and keep the booking in your account.</p>
+                            <div class="form">
+                                <div class="field">
+                                    <label for="co-name">Full name <span class="hint">(as on passport)</span></label>
+                                    <input class="contact-input" id="co-name" name="name" type="text" autocomplete="name" aria-required="true">
+                                    <span class="field-error"></span>
+                                </div>
+                                <div class="form-row">
+                                    <div class="field">
+                                        <label for="co-email">Email</label>
+                                        <input class="contact-input" id="co-email" name="email" type="email" autocomplete="email" aria-required="true">
+                                        <span class="field-error"></span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="co-phone">Mobile number</label>
+                                        <input class="contact-input" id="co-phone" name="phone" type="tel" autocomplete="tel" placeholder="0917 123 4567" aria-required="true">
+                                        <span class="field-error"></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="co-requests">Special requests <span class="hint">(optional)</span></label>
+                                    <textarea class="contact-input" id="co-requests" name="requests" rows="3" placeholder="Dietary needs, accessibility, celebrating something?"></textarea>
+                                </div>
+                                <p class="small-note" id="c-passport">We'll ask for each traveler's passport details after payment.</p>
+                            </div>
+                        </div>
+
+                        <div class="card checkout-section">
+                            <h2>Payment method</h2>
+                            <p class="small-note">No payment is taken on this site. Within one business day we email instructions for the method you choose, and we hold your seats for 2 business days after that.</p>
+                            <fieldset class="pay-options">
+                                <legend class="visually-hidden">Payment method</legend>
+                                <label class="pay-option"><input type="radio" name="payment" value="gcash" checked><span><strong>GCash</strong><small>Instant confirmation once paid</small></span></label>
+                                <label class="pay-option"><input type="radio" name="payment" value="card"><span><strong>Credit or debit card</strong><small>Secure payment link sent by email</small></span></label>
+                                <label class="pay-option"><input type="radio" name="payment" value="bank"><span><strong>Bank transfer</strong><small>BPI or BDO, 1–2 business days to clear</small></span></label>
+                            </fieldset>
+                        </div>
+
+                        <div class="card checkout-section">
+                            <div class="field">
+                                <label class="check"><input type="checkbox" id="co-terms" name="terms"> <span>I've read the <a href="pages/terms.html">booking terms</a>, including the cancellation policy, and the traveler details are correct.</span></label>
+                                <span class="field-error"></span>
+                            </div>
+                            <p class="notice bad" id="checkout-issues" tabindex="-1" hidden>A departure date in your cart is no longer open for booking. <a href="pages/cart.html">Choose a new date in your cart</a> to continue.</p>
+                            <p class="notice bad" id="checkout-error" tabindex="-1" hidden>We couldn't reach our booking system, so nothing was booked. Your cart is saved. Please try again in a minute.</p>
+                            <p class="place-total">Total <strong id="c-total-inline"></strong></p>
+                            <button class="btn block place-order" type="submit" id="place-order">Place order</button>
+                        </div>
+                    </form>
+
+                    <aside class="card dark summary-card" aria-labelledby="order-title">
+                        <h2 id="order-title">Your order</h2>
+                        <ul class="summary-lines" id="summary-lines"></ul>
+                        <div class="price-lines">
+                            <div><span>Travelers</span><span id="c-travelers">0</span></div>
+                            <div><span>Subtotal</span><span id="c-subtotal"></span></div>
+                            <div class="discount" id="c-group-row" hidden><span>Group discount</span><span id="c-group"></span></div>
+                            <div id="c-insurance-row" hidden><span>Travel insurance</span><span id="c-insurance"></span></div>
+                            <div class="discount" id="c-code-row" hidden><span id="c-code-label"></span><span id="c-code"></span></div>
+                            <div class="total"><span>Total</span><b id="c-total"></b></div>
+                        </div>
+                        <p class="notice" id="c-code-note" hidden></p>
+                        <a class="section-link back on-dark" href="pages/cart.html">Edit cart</a>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="confirmation" id="confirmation" hidden>
+                <span class="mark" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 6 9 17l-5-5"></path></svg></span>
+                <h1 id="conf-heading" tabindex="-1">Thank you, <span id="conf-name"></span>!</h1>
+                <p>Your booking reference is</p>
+                <p class="ref" id="conf-ref"></p>
+
+                <div id="conf-sent" hidden>
+                    <p>We've received your booking. A trip specialist will email <strong class="conf-email"></strong> with <span class="conf-payment"></span> instructions within one business day, and we'll hold your seats for 2 business days after that.</p>
+                </div>
+
+                <div class="card send-card" id="conf-unsent" hidden>
+                    <h2>One more step: send us your booking</h2>
+                    <p>Email your booking to our trip specialists so they can confirm your seats and send <span class="conf-payment"></span> instructions to <strong class="conf-email"></strong>.</p>
+                    <div class="actions centered">
+                        <a class="btn" id="conf-mail" href="mailto:hello@tripelago.com">Email my booking</a>
+                        <button class="btn ghost" type="button" id="conf-copy">Copy booking details</button>
+                    </div>
+                    <textarea class="contact-input copy-fallback" id="conf-copy-text" rows="8" aria-label="Booking details, ready to copy" hidden></textarea>
+                    <p class="small-note">Or email the details to hello@tripelago.com. We reply within one business day.</p>
+                </div>
+
+                <div class="card">
+                    <h2 class="eyebrow">Order summary</h2>
+                    <ul class="summary-lines light" id="conf-lines"></ul>
+                    <div class="price-lines conf-total"><div class="total"><span>Total</span><b id="conf-total"></b></div></div>
+                </div>
+
+                <div class="card">
+                    <h2 class="eyebrow">What happens next</h2>
+                    <ol class="next-steps" id="conf-steps"></ol>
+                </div>
+
+                <p class="small-note" id="conf-other-account" hidden>This booking used a different email from the account you're signed in with, so it won't appear on your account page.</p>
+                <div class="actions centered">
+                    <a class="btn" id="conf-account" href="pages/account.html" hidden>View my bookings</a>
+                    <span id="conf-signup" hidden><a class="btn" id="conf-signup-link" href="pages/sign-in.html?tab=signup&amp;next=pages/account.html">Create an account to track this</a></span>
+                    <a class="btn ghost" href="pages/destinations.html">Book another trip</a>
+                    <button class="btn ghost" type="button" data-print>Print</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer slim">
+        <div class="footer-bottom">
+            <span>© <span data-year>2026</span> Tripelago</span>
+            <span class="footer-links"><a href="pages/contact.html">Contact us</a><a href="pages/faq.html">Help</a><a href="pages/terms.html">Terms</a><a href="pages/terms.html#privacy">Privacy</a></span>
+        </div>
+    </footer>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/pages/checkout.js" defer></script>
+</body>
+</html>

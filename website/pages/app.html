@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mobile app · Tripelago</title>
+    <base href="../">
+    <meta name="description" content="Join the waitlist for the Tripelago mobile app: daily itineraries, guide chat and offline maps.">
+    <meta name="theme-color" content="#f4f8f9">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tripelago">
+    <meta property="og:title" content="Mobile app · Tripelago">
+    <meta property="og:description" content="Join the waitlist for the Tripelago mobile app: daily itineraries, guide chat and offline maps.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1697473259118-473211915531?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/brand/brand-favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="pages/app.html#main">Skip to main content</a>
+    <header>
+        <a class="header-brand" href="index.html" aria-label="Tripelago, home">
+            <img src="assets/img/brand/logo-mark.png" alt="" width="96" height="96">
+            <span class="header-brand-name" aria-hidden="true">Tripelago</span>
+        </a>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="pages/destinations.html">Destinations</a>
+            <a href="pages/plans.html">Plans</a>
+            <a href="pages/about.html">About us</a>
+        </nav>
+        <div class="header-actions">
+            <a class="header-cart" href="pages/cart.html" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7h12l-1 12.2a2 2 0 0 1-2 1.8H9a2 2 0 0 1-2-1.8z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="header-cart-count" aria-hidden="true">0</span></a>
+            <a class="header-cta" href="pages/sign-in.html" data-auth-cta>Sign in</a>
+            <button class="header-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 8h16M4 16h16"></path></svg></button>
+        </div>
+    </header>
+    <noscript><p class="noscript">Booking, the cart and accounts need JavaScript. Please turn it on to book a trip.</p></noscript>
+
+    <main id="main" tabindex="-1">
+        <section class="download-section">
+            <div class="download-content">
+                <h1 class="page-title">Mobile app</h1>
+                <p class="heading-description">Access your daily itineraries, chat with your local guide, and use offline maps for hidden gems on the go with the Tripelago mobile app. We're putting the finishing touches on it now.</p>
+
+                <ul class="app-features">
+                    <li><span><strong>Daily itinerary</strong> with times, meeting points and what to bring</span></li>
+                    <li><span><strong>Guide chat</strong> that works on hotel wifi and roaming data</span></li>
+                    <li><span><strong>Offline maps</strong> with your guide's favorite spots pinned</span></li>
+                </ul>
+
+                <form class="form waitlist-form" id="waitlist-form" novalidate>
+                    <div class="field">
+                        <label for="wl-email">Join the launch waitlist</label>
+                        <div class="inline-form">
+                            <input class="contact-input" id="wl-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" aria-required="true" aria-describedby="wl-hint">
+                            <button class="btn" type="submit">Notify me</button>
+                        </div>
+                        <span class="field-error"></span>
+                        <span class="hint" id="wl-hint">Coming to the App Store and Google Play. One email on launch day, nothing else.</span>
+                    </div>
+                </form>
+                <p class="notice good waitlist-done" id="waitlist-done" tabindex="-1" hidden>You're on the list. We'll email <strong id="waitlist-email"></strong> on launch day.</p>
+                <div class="notice waitlist-done" id="waitlist-mail" tabindex="-1" hidden>
+                    <p>One more step: send us a quick email from <strong id="waitlist-mail-email"></strong> to join the list.</p>
+                    <p><a class="btn small" id="waitlist-mail-link" href="mailto:hello@tripelago.com">Email us to join</a></p>
+                    <p class="small-note">Or write to hello@tripelago.com with the subject "App waitlist".</p>
+                </div>
+            </div>
+
+            <div class="download-mockups">
+                <img src="assets/img/app/mockup-desktop.webp" alt="Preview of Tripelago on a laptop" class="mockup-desktop" width="1200" height="781" loading="lazy">
+                <img src="assets/img/app/mockup-mobile.webp" alt="Preview of the Tripelago app on a phone" class="mockup-mobile" width="540" height="1140" loading="lazy">
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer slim">
+        <div class="footer-bottom">
+            <span>© <span data-year>2026</span> Tripelago</span>
+            <span class="footer-links"><a href="pages/contact.html">Contact us</a><a href="pages/faq.html">Help</a><a href="pages/terms.html">Terms</a><a href="pages/terms.html#privacy">Privacy</a></span>
+        </div>
+    </footer>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/pages/waitlist.js" defer></script>
+</body>
+</html>
